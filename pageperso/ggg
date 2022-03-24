@@ -1,0 +1,31 @@
+           <header>
+
+                
+                <nav>
+                    <ul>
+                       <li> <a href="#.html" class="responsive" class="navbar__link first">Mes compétences</a> </li>
+                       <li> <a href="#.html" class="responsive" class="navbar__link second">Mes projets</a> </li> 
+                       <li> <a href="#.html" class="responsive" class="navbar__link third">Mes ambitions</a> </li>    
+                    </ul>
+                    <button class="burger"> 
+                        <span class="bar"></span>
+                    </button>  
+                </nav>
+                <script>
+                    function toggleMenu () {
+                        const navbar = document.querySelector('.navbar');
+                        const burger = document.querySelector('.burger');
+                        burger.addEventListener('click',(e) => {
+                            navbar.classList.toggle('show-nav');
+                        })
+                    }
+                    toggleMenu();
+                </script>  
+                <details>
+                    <summary class="bouton"></summary>
+                    <p><a href="particulier.html">Mes projets</a></p>
+                    <p><a href="professionnel.html">Mes compétences</a></p>
+                    <p><a href="professionnel.html">Mes ambitions</a></p>
+                </details>
+                
+            </header>
